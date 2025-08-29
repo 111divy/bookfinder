@@ -1,6 +1,6 @@
 {
   "name": "bookfinder",
-  "homepage": "https://111divy.github.io/bookfinder/",
+  "homepage": "https://111divy.github.io/bookfinder",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,9 +11,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-  "update": "git add . && git commit -m 'update' && git push origin main && gh-pages -d dist"
-
-
+    "update": "git add . && git commit -m 'update' && git push origin main && npm run build && npm run deploy"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
